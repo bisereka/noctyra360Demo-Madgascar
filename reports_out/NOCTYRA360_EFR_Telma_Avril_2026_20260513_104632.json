@@ -1,0 +1,18 @@
+{
+  "operator": "Telma",
+  "country": "Madagascar",
+  "period": "Avril 2026",
+  "currency": "MGA",
+  "total_revenue": 2081479529,
+  "tax_due": 520369882,
+  "declared_revenue": 385073713,
+  "total_records": 100000,
+  "sha256": "abc123",
+  "certified": {},
+  "gap": {
+    "tax_gap": 135296169,
+    "tax_gap_local": 135296169,
+    "tax_gap_usd": 28186,
+    "gap_pct": 26.0
+  }
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NOCTYRA360™ — Connexion</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#07101C;font-family:Arial,sans-serif;min-height:100vh;
+  display:flex;align-items:center;justify-content:center;padding:20px}
+.wrap{width:100%;max-width:440px}
+.logo{text-align:center;margin-bottom:28px}
+.logo h1{color:#C9A227;font-size:30px;font-weight:900;letter-spacing:3px}
+.logo p{color:#64748B;font-size:12px;margin-top:4px}
+.logo .org{color:#C9A227;font-size:11px;margin-top:6px;opacity:.8}
+.card{background:#0D1B2E;border:1px solid #1A3050;border-radius:14px;padding:30px}
+.card h2{color:#e2e8f0;font-size:16px;text-align:center;margin-bottom:22px;font-weight:600}
+/* Boutons rôles */
+.roles{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:20px}
+.role-card{background:#07101C;border:1.5px solid #1A3050;border-radius:10px;
+  padding:12px;cursor:pointer;text-align:left;transition:all .2s;
+  color:#e2e8f0;width:100%}
+.role-card:hover{border-color:#2A4070;background:#0F1F35;transform:translateY(-1px)}
+.role-card.active{border-color:#C9A227;background:#162544}
+.role-card .icon{font-size:22px;margin-bottom:4px}
+.role-card .name{font-size:12px;font-weight:700;color:#C9A227}
+.role-card .org{font-size:10px;color:#64748B;margin-top:1px}
+/* Formulaire */
+.sep{display:flex;align-items:center;gap:10px;margin:16px 0;color:#334155;font-size:11px}
+.sep::before,.sep::after{content:'';flex:1;height:1px;background:#1A3050}
+.field{margin-bottom:14px}
+label{color:#94A3B8;font-size:11px;display:block;margin-bottom:5px;
+  font-weight:700;text-transform:uppercase;letter-spacing:.5px}
+input{width:100%;background:#07101C;border:1.5px solid #1A3050;color:#e2e8f0;
+  padding:11px 14px;border-radius:8px;font-size:14px;outline:none;
+  transition:border-color .2s}
+input:focus{border-color:#C9A227}
+.btn{width:100%;background:#C9A227;color:#07101C;border:none;
+  padding:13px;border-radius:8px;font-size:14px;font-weight:700;
+  cursor:pointer;transition:all .2s;margin-top:6px;display:flex;
+  align-items:center;justify-content:center;gap:8px}
+.btn:hover{background:#f59e0b}
+.btn:disabled{background:#1e293b;color:#475569;cursor:not-allowed}
+.err{background:rgba(248,113,113,.1);border:1px solid rgba(248,113,113,.4);
+  border-radius:8px;padding:11px 14px;color:#F87171;font-size:13px;
+  margin-bottom:14px;display:none;text-align:center}
+.spin{width:16px;height:16px;border:2px solid rgba(7,16,28,.3);
+  border-top-color:#07101C;border-radius:50%;animation:sp .6s linear infinite;display:none}
+@keyframes sp{to{transform:rotate(360deg)}}
+.footer{display:flex;justify-content:center;gap:16px;margin-top:18px}
+.badge{color:#334155;font-size:10px;letter-spacing:.3px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <!-- Logo -->
+  <div class="logo">
+    <h1>NOCTYRA360™</h1>
+    <p>Revenue Compliance &amp; Assurance Platform</p>
+    <p class="org">Connect Now USA LLC · Tempe, AZ, USA</p>
+  </div>
+
+  <!-- Carte connexion -->
+  <div class="card">
+    <h2>🔐 Connexion Sécurisée</h2>
+
+    <!-- Message d'erreur -->
+    <div id="err" class="err"></div>
+
+    <!-- Sélection rapide rôle -->
+    <label style="margin-bottom:10px;display:block">Accès rapide par rôle</label>
+    <div class="roles">
+      <button class="role-card" onclick="pick(this,'dgi','DGI_N360_2026!')">
+        <div class="icon">🏛️</div>
+        <div class="name">DGI</div>
+        <div class="org">Direction des Impôts</div>
+      </button>
+      <button class="role-card" onclick="pick(this,'artec','ARTEC_N360_2026!')">
+        <div class="icon">📡</div>
+        <div class="name">ARTEC</div>
+        <div class="org">Autorité de Régulation</div>
+      </button>
+      <button class="role-card" onclick="pick(this,'ministere','MIN_N360_2026!')">
+        <div class="icon">⚖️</div>
+        <div class="name">MINISTÈRE</div>
+        <div class="org">Ministère des Finances</div>
+      </button>
+      <button class="role-card" onclick="pick(this,'auditeur','AUDIT_N360_2026!')">
+        <div class="icon">🔍</div>
+        <div class="name">AUDITEUR</div>
+        <div class="org">Audit Indépendant</div>
+      </button>
+    </div>
+
+    <div class="sep">ou saisir manuellement</div>
+
+    <!-- Formulaire -->
+    <div class="field">
+      <label>Identifiant</label>
+      <input id="u" type="text" placeholder="Identifiant" autocomplete="username"
+             onkeydown="if(event.key==='Enter')login()">
+    </div>
+    <div class="field">
+      <label>Mot de passe</label>
+      <input id="p" type="password" placeholder="Mot de passe" autocomplete="current-password"
+             onkeydown="if(event.key==='Enter')login()">
+    </div>
+
+    <button class="btn" id="btn" onclick="login()">
+      <span id="btn-text">Connexion →</span>
+      <div class="spin" id="spin"></div>
+    </button>
+  </div>
+
+  <div class="footer">
+    <span class="badge">ISO 27001</span>
+    <span class="badge">·</span>
+    <span class="badge">JWT · AES-256</span>
+    <span class="badge">·</span>
+    <span class="badge">SHA-256</span>
+  </div>
+</div>
+
+<script>
+  // Si déjà connecté → rediriger vers la plateforme
+  (function(){
+    var tok = document.cookie.split(';')
+      .map(function(c){return c.trim();})
+      .find(function(c){return c.startsWith('n360_token=');});
+    if(tok){
+      // Vérifier si le token est valide
+      fetch('/api/me',{credentials:'include'})
+        .then(function(r){
+          if(r.ok) window.location.href='/';
+        }).catch(function(){});
+    }
+  })();
+
+  function pick(btn, username, password){
+    document.querySelectorAll('.role-card').forEach(function(b){
+      b.classList.remove('active');
+    });
+    btn.classList.add('active');
+    document.getElementById('u').value = username;
+    document.getElementById('p').value = password;
+    // Connexion automatique après 200ms
+    setTimeout(login, 200);
+  }
+
+  async function login(){
+    var u   = document.getElementById('u').value.trim();
+    var p   = document.getElementById('p').value;
+    var btn = document.getElementById('btn');
+    var sp  = document.getElementById('spin');
+    var bt  = document.getElementById('btn-text');
+    var err = document.getElementById('err');
+
+    if(!u || !p){ showErr('Identifiant et mot de passe requis'); return; }
+
+    // UI loading
+    btn.disabled=true; sp.style.display='block'; bt.textContent='Connexion...';
+    err.style.display='none';
+
+    try{
+      var r = await fetch('/api/login',{
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        credentials:'include',
+        body:JSON.stringify({username:u, password:p})
+      });
+      var data = await r.json();
+
+      if(r.ok && data.token){
+        bt.textContent = '✅ ' + data.user.role_label;
+
+        // Stocker dans sessionStorage aussi (backup)
+        sessionStorage.setItem('n360_token', data.token);
+        sessionStorage.setItem('n360_user',  JSON.stringify(data.user));
+
+        // Rediriger vers la plateforme
+        setTimeout(function(){
+          window.location.href = '/';
+        }, 500);
+      } else {
+        showErr(data.detail || 'Identifiant ou mot de passe incorrect');
+        btn.disabled=false; sp.style.display='none'; bt.textContent='Connexion →';
+      }
+    } catch(e){
+      showErr('Erreur connexion: ' + e.message);
+      btn.disabled=false; sp.style.display='none'; bt.textContent='Connexion →';
+    }
+  }
+
+  function showErr(msg){
+    var e=document.getElementById('err');
+    e.textContent='⚠️ '+msg;
+    e.style.display='block';
+  }
+
+  document.getElementById('u').focus();
+</script>
+</body>
+</html>

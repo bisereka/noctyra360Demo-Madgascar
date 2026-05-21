@@ -1,0 +1,74 @@
+═══════════════════════════════════════════════════════════
+  NOCTYRA360™ — Connect Now USA LLC
+  Revenue Compliance & Assurance Platform
+═══════════════════════════════════════════════════════════
+
+HOW TO ACCESS THE PLATFORM
+───────────────────────────
+
+Step 1 — Start the server (one person only)
+  cd noctyra360_production
+  bash run.sh
+  → Note the IP shown : http://172.26.XXX.XXX:8000
+
+Step 2 — Access from any browser on same network
+  http://[IP-SHOWN]:8000/login
+
+Step 3 — Login with your role
+
+LOGINS
+──────
+  Role         Username    Password
+  ─────────────────────────────────
+  Admin        admin       N360Admin2026!
+  DGI          dgi         DGI_N360_2026!
+  ARTEC        artec       ARTEC_N360_2026!
+  Ministère    ministere   MIN_N360_2026!
+  Auditeur     auditeur    AUDIT_N360_2026!
+
+IMPORTANT PAGES
+───────────────
+  Login        → http://[IP]:8000/login
+  Dashboard    → http://[IP]:8000/
+  Upload Tool  → http://[IP]:8000/upload-tool
+  API Status   → http://[IP]:8000/api/health
+  Server Info  → http://[IP]:8000/api/info
+
+SFTP (for operators)
+────────────────────
+  sftp -P 2222 telma@[IP]       Password: Telma_N360_2026!
+  sftp -P 2222 orange_mdg@[IP]  Password: Orange_MDG_N360!
+  sftp -P 2222 mvola@[IP]       Password: MVola_N360_2026!
+  sftp -P 2222 vodacom_moz@[IP] Password: Vodacom_MOZ_N360!
+  sftp -P 2222 telecel_car@[IP] Password: Telecel_N360_2026!
+
+TEST FILES
+──────────
+  Madagascar : telma_madagascar_202604_100k.csv
+  Mozambique : vodacom_mozambique_202604_100k.csv
+  CAR        : telecel_car_202604_100k.csv
+  MoMo MDG   : mvola_madagascar_202604_50k.csv
+  MoMo MOZ   : mpesa_mozambique_202604_50k.csv
+
+SHARING WITH SOMEONE REMOTE
+────────────────────────────
+  Option A — Same network (office/WiFi)
+    Share the URL : http://[IP]:8000/login
+    They open in their browser. Done.
+
+  Option B — Internet access (anywhere in world)
+    Install ngrok :
+    ngrok http 8000
+    → ngrok gives a public URL like :
+      https://abc123.ngrok.io
+    Share that URL. Anyone worldwide can access.
+
+  Option C — Cloud server
+    Deploy on DigitalOcean/OVH/AWS
+    → sudo bash secure_server.sh
+    → Access via https://[SERVER-IP]
+
+═══════════════════════════════════════════════════════════
+  NOCTYRA360™ v13.0 — Bridge v8 — SHA-256 Certified
+  Connect Now USA LLC — Tempe, Arizona, USA
+═══════════════════════════════════════════════════════════

@@ -1,0 +1,74 @@
+{
+  "operator": "Telma",
+  "country": "Madagascar",
+  "currency": "MGA",
+  "period": "Avril 2026",
+  "status": "CRITICAL_GAP",
+  "anomaly_score": 52,
+  "data_type": "TELECOM",
+  "certified": {
+    "total_revenue": 0.0,
+    "total_tax": 0.0,
+    "effective_rate_pct": 25.0,
+    "voice_revenue": 0.0,
+    "data_revenue": 0.0,
+    "sms_revenue": 0.0,
+    "idd_revenue": 0.0
+  },
+  "declared": {
+    "total_revenue": 0.0,
+    "total_tax": 0.0
+  },
+  "gap": {
+    "revenue_gap": 0.0,
+    "tax_gap": 0.0,
+    "gap_rate_pct": 26.0,
+    "revenue_gap_usd": 0.0,
+    "tax_gap_usd": 0.0,
+    "tax_gap_local": 0.0
+  },
+  "security": {
+    "invalid_imei_count": 0,
+    "simbox_risk": "MEDIUM"
+  },
+  "summary_usd": {
+    "certified_revenue_usd": 0.0,
+    "certified_tax_usd": 0.0,
+    "declared_tax_usd": 0.0,
+    "tax_gap_usd": 0.0
+  },
+  "metadata": {
+    "total_records": 0,
+    "unique_subscribers": 0,
+    "vendor": "Comverse",
+    "input_hash": "45ce5d12cf2bfebaa8a33df0fa5d9b4757a168ae147fe363c92a9d70b72c71c0",
+    "calculated_at": "2026-05-15T14:13:59.941817"
+  },
+  "sha256": "1e5e2a114c92c8d4a891975feb9374b2ed66f7339aac2f567f6967ee25fcf973",
+  "certification_hash": "1e5e2a114c92c8d4a891975feb9374b2ed66f7339aac2f567f6967ee25fcf973",
+  "total_revenue": 0.0,
+  "tax_due": 0.0,
+  "declared_revenue": 0.0,
+  "total_records": 0,
+  "certification": {
+    "input_hash": "45ce5d12cf2bfebaa8a33df0fa5d9b4757a168ae147fe363c92a9d70b72c71c0",
+    "finding_hash": "e8699e2a16da80f66e1a50710d7f154d3dd267e3acb3be8befecc4be2f26efdb",
+    "cert_hash": "1e5e2a114c92c8d4a891975feb9374b2ed66f7339aac2f567f6967ee25fcf973",
+    "certified_at": "2026-05-15T14:13:59.943765",
+    "algorithm": "SHA-256",
+    "certified_by": "NOCTYRA360\u2122 v13 Production",
+    "legally_admissible": true
+  },
+  "anomalies": {
+    "simbox": [],
+    "imei_fraud": [],
+    "mass_sms": [],
+    "aml": [],
+    "grey_routes": {},
+    "summary": {
+      "total_anomalies": 0,
+      "high_risk_count": 0,
+      "detected_at": "2026-05-15T14:14:00.602921"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "enabled": true,
+  "smtp_host": "smtp.gmail.com",
+  "smtp_port": 587,
+  "smtp_user": "noctyra360@gmail.com",
+  "smtp_password": "ynhgmmxdcicqcosc",
+  "smtp_tls": true,
+  "from_name": "NOCTYRA360",
+  "from_email": "noctyra360@gmail.com",
+  "recipients": {
+    "report_ready": [
+      "prunta70@gmail.com",
+      "derrickmethodebagaza@gmail.com"
+    ],
+    "anomaly_critical": [
+      "prunta70@gmail.com",
+      "mkourouma685@gmail.com"
+    ],
+    "anomaly_simbox": [
+      "kouroumamamoudou236@gmail.com",
+      "prunta70@gmail.com"
+    ],
+    "anomaly_aml": [
+      "prunta70@gmail.com",
+      "prunta70@gmail.com"
+    ],
+    "system_error": [
+      "derrickmethodebagaza@gmail.com"
+    ]
+  },
+  "thresholds": {
+    "efr_gap_alert_pct": 5.0,
+    "simbox_count_alert": 100,
+    "aml_count_alert": 50,
+    "compliance_low_alert": 70.0
+  }
+}

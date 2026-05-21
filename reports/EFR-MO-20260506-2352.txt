@@ -1,0 +1,53 @@
+======================================================================
+  NOCTYRA360™ — CERTIFIED EFR REPORT
+  Connect Now USA LLC & IntegraTouch
+======================================================================
+  Reference:    EFR-MO-20260506-2352
+  Generated:    2026-05-06 23:52 UTC
+  Operator:     Vodacom Test
+  Period:       March 2026
+  Country:      Mozambique
+
+----------------------------------------------------------------------
+  CERTIFIED CDR RESULTS
+----------------------------------------------------------------------
+  Records processed:      10,000
+  Unique subscribers:     500
+  Certified revenue:      980,516,870.00 MZN
+  Certified revenue:      USD 15,343,351.38
+
+----------------------------------------------------------------------
+  DECLARED vs CERTIFIED — THE GAP
+----------------------------------------------------------------------
+  Declared revenue:       1,574,991,978.95 MZN
+  Certified revenue:      980,516,870.00 MZN
+  Revenue gap:            -594,475,108.95 MZN
+  Revenue gap:            USD -9,302,481.95
+
+  Declared taxes:         362,248,155.16 MZN
+  Taxes due (certified):  225,518,880.10 MZN
+  TAX GAP (EFR):          -136,729,275.06 MZN
+  TAX GAP (EFR):          USD -2,139,570.85
+  Gap percentage:         -37.7%
+
+----------------------------------------------------------------------
+  COMPLIANCE STATUS
+----------------------------------------------------------------------
+  Status:    *** CRITICAL ***
+  Category:  SEVERE
+  Label:     Severe deliberate under-declaration
+
+----------------------------------------------------------------------
+  SHA-256 CERTIFICATION CHAIN
+----------------------------------------------------------------------
+  Input hash:   4ac1a402d18fbffc9eda929ccd32c212a5f650f3...
+  Chain:        
+  Cert hash:    027cf97dd964690cb8941ec60f1cb52ad142bc7a99afb3fc32eb8d29755f872f
+  Algorithm:    SHA-256
+  Admissibility: Legally admissible — tamper-evident
+
+======================================================================
+  This report is tamper-evident. Any modification invalidates
+  the SHA-256 certification chain above.
+  Legally admissible before any tax authority or court.
+======================================================================

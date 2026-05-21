@@ -1,0 +1,46 @@
+{
+  "operator": "Movitel MOZ",
+  "country": "Mozambique",
+  "currency": "MZN",
+  "period": "March 2026",
+  "status": "NO_DECLARATION",
+  "anomaly_score": 0,
+  "data_type": "TELECOM",
+  "certified": {
+    "total_revenue": 678460931.0,
+    "total_tax": 156046014.13,
+    "effective_rate_pct": 23.0,
+    "voice_revenue": 162441061.0,
+    "data_revenue": 498193609.0,
+    "sms_revenue": 99900.0,
+    "idd_revenue": 17726361.0
+  },
+  "declared": null,
+  "gap": null,
+  "security": {
+    "invalid_imei_count": 9352,
+    "simbox_risk": "LOW"
+  },
+  "summary_usd": {
+    "certified_revenue_usd": 10616711.23,
+    "certified_tax_usd": 2441843.58,
+    "declared_tax_usd": null,
+    "tax_gap_usd": null
+  },
+  "metadata": {
+    "total_records": 10000,
+    "unique_subscribers": 500,
+    "vendor": "Ericsson",
+    "input_hash": "8897e489eaaf23c1296809a4defd516543659b6767b6a1232af5c1d499373f7b",
+    "calculated_at": "2026-05-07T00:01:39.409212"
+  },
+  "certification": {
+    "input_hash": "8897e489eaaf23c1296809a4defd516543659b6767b6a1232af5c1d499373f7b",
+    "finding_hash": "1b69fcc266497a6fcbed4b09a1c994b60c5f3ab6bf3bf169ac3e3fa4045dfa2f",
+    "cert_hash": "c7b0ee9f9d3a2362099042a1e0bb03d6921797ab8e9e28ebb02ff807799bf0dd",
+    "certified_at": "2026-05-07T00:01:39.409228",
+    "algorithm": "SHA-256",
+    "certified_by": "NOCTYRA360\u2122 v13 Production",
+    "legally_admissible": true
+  }
+}

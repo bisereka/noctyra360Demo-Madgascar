@@ -1,0 +1,68 @@
+{
+  "title": "NOCTYRA360™ — Certified EFR Report",
+  "subtitle": "Vodacom Mozambique — March 2026",
+  "country": "Mozambique",
+  "generated_at": "2026-05-06 23:51 UTC",
+  "reference": "EFR-MO-20260506-2351",
+  "finding": {
+    "operator": "Vodacom Mozambique",
+    "period": "March 2026",
+    "country": "Mozambique",
+    "currency": "MZN",
+    "is_momo": false,
+    "certified_revenue": 980516870.0,
+    "certified_revenue_usd": 15343351.38,
+    "taxable_base": 980516870.0,
+    "taxes_due": {
+      "VAT": 166687867.9,
+      "IEC": 49025843.5,
+      "INCM_LEVY": 9805168.7,
+      "TOTAL": 225518880.1
+    },
+    "total_taxes_due": 225518880.1,
+    "total_taxes_due_usd": 3528970.82,
+    "declared_revenue": 1574991978.95,
+    "declared_revenue_usd": 24645833.33,
+    "declared_taxes": 362248155.16,
+    "declared_taxes_usd": 5668541.67,
+    "revenue_gap": -594475108.95,
+    "revenue_gap_usd": -9302481.95,
+    "tax_gap": -136729275.06,
+    "tax_gap_usd": -2139570.85,
+    "gap_percentage": -37.74,
+    "gap_category": "SEVERE",
+    "gap_label": "Severe deliberate under-declaration",
+    "compliance_status": "CRITICAL",
+    "status_color": "RED",
+    "imf_baseline": {
+      "monthly_usd": 24645833.33,
+      "monthly_MZN": 1574991979.17,
+      "source": "IMF 1.3% of GDP · World Bank 2024"
+    },
+    "records_processed": 10000,
+    "unique_subscribers": 500,
+    "input_hash": "4ac1a402d18fbffc9eda929ccd32c212a5f650f3b555a3a634c7b0cc1f00aae9",
+    "computed_at": "2026-05-06T23:51:01.332783",
+    "certification": {
+      "finding_hash": "60f62aa081333eed679276a6b7730df9ad7fed7efad9485b963fa92b258b77a9",
+      "cert_hash": "40462f8168916490466b798b591693d787c09b32dafe3a1de63984bb416d088b",
+      "certified_at": "2026-05-06T23:51:01.332910",
+      "algorithm": "SHA-256",
+      "admissibility": "Legally admissible — tamper-evident"
+    }
+  },
+  "anomalies": {
+    "imei_violations": 9347
+  },
+  "certification_chain": "",
+  "cert_hash": "40462f8168916490466b798b591693d787c09b32dafe3a1de63984bb416d088b",
+  "admissibility": "Legally admissible — tamper-evident",
+  "summary": {
+    "status": "CRITICAL",
+    "color": "RED",
+    "tax_gap_usd": -2139570.85,
+    "tax_gap_MZN": -136729275.06,
+    "gap_pct": -37.74,
+    "category": "SEVERE"
+  }
+}

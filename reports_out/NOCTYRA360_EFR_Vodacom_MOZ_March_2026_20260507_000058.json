@@ -1,0 +1,46 @@
+{
+  "operator": "Vodacom MOZ",
+  "country": "Mozambique",
+  "currency": "MZN",
+  "period": "March 2026",
+  "status": "NO_DECLARATION",
+  "anomaly_score": 0,
+  "data_type": "TELECOM",
+  "certified": {
+    "total_revenue": 980516870.0,
+    "total_tax": 225518880.1,
+    "effective_rate_pct": 23.0,
+    "voice_revenue": 229614450.0,
+    "data_revenue": 709385120.0,
+    "sms_revenue": 99800.0,
+    "idd_revenue": 41417500.0
+  },
+  "declared": null,
+  "gap": null,
+  "security": {
+    "invalid_imei_count": 9347,
+    "simbox_risk": "LOW"
+  },
+  "summary_usd": {
+    "certified_revenue_usd": 15343351.38,
+    "certified_tax_usd": 3528970.82,
+    "declared_tax_usd": null,
+    "tax_gap_usd": null
+  },
+  "metadata": {
+    "total_records": 10000,
+    "unique_subscribers": 500,
+    "vendor": "Huawei",
+    "input_hash": "4ac1a402d18fbffc9eda929ccd32c212a5f650f3b555a3a634c7b0cc1f00aae9",
+    "calculated_at": "2026-05-07T00:00:58.463834"
+  },
+  "certification": {
+    "input_hash": "4ac1a402d18fbffc9eda929ccd32c212a5f650f3b555a3a634c7b0cc1f00aae9",
+    "finding_hash": "c338683a6808928f208b63694e0a9730b072412c342729d79a45cf220d675af8",
+    "cert_hash": "06e51dcc875eba67ea44183a35b38aa8c03942cfbc3916732c390a33b37ba93a",
+    "certified_at": "2026-05-07T00:00:58.463848",
+    "algorithm": "SHA-256",
+    "certified_by": "NOCTYRA360\u2122 v13 Production",
+    "legally_admissible": true
+  }
+}

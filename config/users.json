@@ -1,0 +1,50 @@
+{
+  "admin": {
+    "username": "admin",
+    "hashed_password": "$5$rounds=535000$xd0lDHLcwOkvM8tC$cCum5/4jlYFV00cZ8tfacetBIhvSrzOV.dg3GltSIM4",
+    "role": "admin",
+    "full_name": "Administrateur NOCTYRA360\u2122",
+    "email": "admin@noctyra360.com",
+    "active": true
+  },
+  "dgi": {
+    "username": "dgi",
+    "hashed_password": "$5$rounds=535000$l4u4OsDi9Adr5jhv$uez1YCzcretCkLZNJnO3f743mOxkfskcms2FBEyh3PD",
+    "role": "dgi",
+    "full_name": "Direction G\u00e9n\u00e9rale des Imp\u00f4ts",
+    "email": "dgi@gouvernement.mg",
+    "active": true
+  },
+  "artec": {
+    "username": "artec",
+    "hashed_password": "$5$rounds=535000$TEHkh/4zwHUtxtOl$HGQZP7yjZCTcGB1Y1/9HWefgXpgUuWjsVDby49bY9V1",
+    "role": "artec",
+    "full_name": "ARTEC \u2014 Autorit\u00e9 de R\u00e9gulation",
+    "email": "artec@artec.mg",
+    "active": true
+  },
+  "ministere": {
+    "username": "ministere",
+    "hashed_password": "$5$rounds=535000$/koflokqfFTAQ7es$6YtnLXGFFnrAJSxLRKidX1CSv/8fZJlGp5yERDH2Zc/",
+    "role": "ministere",
+    "full_name": "Minist\u00e8re des Finances",
+    "email": "ministre@finances.gov.mg",
+    "active": true
+  },
+  "auditeur": {
+    "username": "auditeur",
+    "hashed_password": "$5$rounds=535000$Lrp6/Svl4L2oGUOQ$6IDWFZ4R69xEFB0NxbmBgbbJTdk2GhUwpl9F2e2gZz8",
+    "role": "auditeur",
+    "full_name": "Auditeur Ind\u00e9pendant",
+    "email": "audit@noctyra360.com",
+    "active": true
+  },
+  "dgi_felix": {
+    "username": "dgi_felix",
+    "hashed_password": "$5$rounds=535000$8klfCSxNAhBb2gv1$v3a0KoduQkqS2vhpwJPkEenvtgAEIuo0LQ0NkNVejCD",
+    "role": "dgi",
+    "full_name": "Felix \u2014 Lead Analyst DGI",
+    "email": "felix@dgi.mg",
+    "active": true
+  }
+}

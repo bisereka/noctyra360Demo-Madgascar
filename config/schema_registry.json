@@ -1,0 +1,170 @@
+{
+  "vodacom_mozambique": {
+    "operator": "Vodacom Mozambique",
+    "vendor": "Huawei",
+    "delimiter": "|",
+    "encoding": "ascii",
+    "column_map": {
+      "msisdn": "CALLING_NUMBER",
+      "call_type": "CALL_TYPE",
+      "date": "CALL_DATE",
+      "time": "CALL_TIME",
+      "duration": "DURATION",
+      "revenue": "CHARGE",
+      "b_number": "CALLED_NUMBER",
+      "imei": "IMEI"
+    },
+    "is_momo": false,
+    "saved_at": "2026-05-06T23:51:01.236747"
+  },
+  "vodacom_test": {
+    "operator": "Vodacom Test",
+    "vendor": "Huawei",
+    "delimiter": "|",
+    "encoding": "ascii",
+    "column_map": {
+      "msisdn": "CALLING_NUMBER",
+      "call_type": "CALL_TYPE",
+      "date": "CALL_DATE",
+      "time": "CALL_TIME",
+      "duration": "DURATION",
+      "revenue": "CHARGE",
+      "b_number": "CALLED_NUMBER",
+      "imei": "IMEI"
+    },
+    "is_momo": false,
+    "saved_at": "2026-05-06T23:52:14.920409"
+  },
+  "vodacom_moz": {
+    "operator": "Vodacom MOZ",
+    "vendor": "Huawei",
+    "delimiter": "|",
+    "encoding": "ascii",
+    "column_map": {
+      "msisdn": "CALLING_NUMBER",
+      "call_type": "CALL_TYPE",
+      "date": "CALL_DATE",
+      "time": "CALL_TIME",
+      "duration": "DURATION",
+      "revenue": "CHARGE",
+      "b_number": "CALLED_NUMBER",
+      "imei": "IMEI"
+    },
+    "is_momo": false,
+    "saved_at": "2026-05-07T00:00:58.372486"
+  },
+  "movitel_moz": {
+    "operator": "Movitel MOZ",
+    "vendor": "Ericsson",
+    "delimiter": ";",
+    "encoding": "ascii",
+    "column_map": {
+      "msisdn": "A-number",
+      "call_type": "CallType",
+      "date": "Date",
+      "time": "Time",
+      "duration": "Duration",
+      "revenue": "Charge",
+      "b_number": "B-number",
+      "imei": "IMEI"
+    },
+    "is_momo": false,
+    "saved_at": "2026-05-07T00:01:39.316148"
+  },
+  "telma": {
+    "operator": "Telma",
+    "vendor": "Comverse",
+    "delimiter": ",",
+    "encoding": "ascii",
+    "column_map": {
+      "msisdn": "orig_msisdn",
+      "call_type": "call_type",
+      "time": "timestamp",
+      "duration": "duration_sec",
+      "revenue": "revenue",
+      "imei": "imei"
+    },
+    "is_momo": false,
+    "saved_at": "2026-05-11T21:56:30.809930"
+  },
+  "vodacom": {
+    "operator": "Vodacom",
+    "vendor": "Comverse",
+    "delimiter": ",",
+    "encoding": "ascii",
+    "column_map": {
+      "msisdn": "orig_msisdn",
+      "call_type": "call_type",
+      "time": "timestamp",
+      "duration": "duration_sec",
+      "revenue": "revenue",
+      "imei": "imei"
+    },
+    "is_momo": false,
+    "saved_at": "2026-05-15T05:47:50.491418"
+  },
+  "telecel": {
+    "operator": "Telecel",
+    "vendor": "Comverse",
+    "delimiter": ",",
+    "encoding": "ascii",
+    "column_map": {
+      "msisdn": "orig_msisdn",
+      "call_type": "call_type",
+      "time": "timestamp",
+      "duration": "duration_sec",
+      "revenue": "revenue",
+      "imei": "imei"
+    },
+    "is_momo": false,
+    "saved_at": "2026-05-15T05:47:50.530386"
+  },
+  "mvola": {
+    "operator": "MVola",
+    "vendor": "Generic_MoMo",
+    "delimiter": ",",
+    "encoding": "ascii",
+    "column_map": {
+      "msisdn": "sender_msisdn",
+      "tx_type": "tx_type",
+      "time": "timestamp",
+      "amount": "amount",
+      "status": "status",
+      "tx_id": "tx_id"
+    },
+    "is_momo": true,
+    "saved_at": "2026-05-15T05:47:50.585772"
+  },
+  "telecel_car": {
+    "operator": "Telecel CAR",
+    "vendor": "Comverse",
+    "delimiter": ",",
+    "encoding": "ascii",
+    "column_map": {
+      "msisdn": "orig_msisdn",
+      "call_type": "call_type",
+      "time": "timestamp",
+      "duration": "duration_sec",
+      "revenue": "revenue",
+      "imei": "imei"
+    },
+    "is_momo": false,
+    "saved_at": "2026-05-15T05:51:07.781867"
+  },
+  "orange_centrafrique": {
+    "operator": "Orange Centrafrique",
+    "vendor": "Comverse",
+    "delimiter": ",",
+    "encoding": "ascii",
+    "column_map": {
+      "msisdn": "orig_msisdn",
+      "call_type": "call_type",
+      "time": "timestamp",
+      "duration": "duration_sec",
+      "revenue": "revenue",
+      "imei": "imei"
+    },
+    "is_momo": false,
+    "saved_at": "2026-05-15T14:16:52.909980"
+  }
+}

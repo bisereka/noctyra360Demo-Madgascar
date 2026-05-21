@@ -1,0 +1,1988 @@
+{
+  "operator": "Orange Centrafrique",
+  "country": "Central African Republic",
+  "currency": "XAF",
+  "period": "Avril 2026",
+  "status": "CRITICAL_GAP",
+  "anomaly_score": 64,
+  "data_type": "TELECOM",
+  "certified": {
+    "total_revenue": 341124776.0,
+    "total_tax": 88692441.76,
+    "effective_rate_pct": 26.0,
+    "voice_revenue": 208476378.0,
+    "data_revenue": 101617212.0,
+    "sms_revenue": 565840.0,
+    "idd_revenue": 22787992.0
+  },
+  "declared": {
+    "total_revenue": 230549129.0,
+    "total_tax": 59942513.0
+  },
+  "gap": {
+    "revenue_gap": 110575647.0,
+    "tax_gap": 28749928.76,
+    "gap_rate_pct": 32.42,
+    "revenue_gap_usd": 184292.74,
+    "tax_gap_usd": 47916.55,
+    "tax_gap_local": 28749928.76
+  },
+  "security": {
+    "invalid_imei_count": 99118,
+    "simbox_risk": "MEDIUM"
+  },
+  "summary_usd": {
+    "certified_revenue_usd": 568541.29,
+    "certified_tax_usd": 147820.74,
+    "declared_tax_usd": 99904.19,
+    "tax_gap_usd": 47916.55
+  },
+  "metadata": {
+    "total_records": 100000,
+    "unique_subscribers": 8013,
+    "vendor": "Comverse",
+    "input_hash": "65ab176b1780f53b01dd46a428e27c0ee06677de732df9d1ecfe6d9fded2a496",
+    "calculated_at": "2026-05-15T14:18:25.287086"
+  },
+  "sha256": "7a4787c0e13ac399900c76862eda4373f28e20d1a34f8781d3a11076e582e45d",
+  "certification_hash": "7a4787c0e13ac399900c76862eda4373f28e20d1a34f8781d3a11076e582e45d",
+  "total_revenue": 341124776.0,
+  "tax_due": 88692441.76,
+  "declared_revenue": 59942513.0,
+  "total_records": 100000,
+  "certification": {
+    "input_hash": "65ab176b1780f53b01dd46a428e27c0ee06677de732df9d1ecfe6d9fded2a496",
+    "finding_hash": "0269d431d32e0fb82f733da16e2760d5cbdd1e763453b862f0ea8edf02263b45",
+    "cert_hash": "7a4787c0e13ac399900c76862eda4373f28e20d1a34f8781d3a11076e582e45d",
+    "certified_at": "2026-05-15T14:18:25.287129",
+    "algorithm": "SHA-256",
+    "certified_by": "NOCTYRA360\u2122 v13 Production",
+    "legally_admissible": true
+  },
+  "anomalies": {
+    "simbox": [],
+    "imei_fraud": [
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "1000000000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 722458591"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.305387"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100015000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 724680314"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.306356"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100016000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 728132912"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.307618"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100019000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 722722408"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.308893"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100024000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 725504038"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.309439"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100027000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 725093379"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.309906"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "10003000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 727251562"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.310323"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100038000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 727528399"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.310675"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100047000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 721827302"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.311083"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100049000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 727535837"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.311410"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100084000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 723492539"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.311758"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "10009100000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 727058670"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.312072"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100094000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 722867825"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.312377"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100099000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 729718700"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.312683"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100103000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 722982850"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.313054"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100112000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 721992583"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.313362"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100113000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 725935567"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.313662"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100117000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 727660764"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.313939"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100120000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 727820148"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.314217"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100136000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 725266266"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.314503"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100138000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 725511711"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.314820"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100143000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 727718433"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.315443"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100154000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 722867825"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.316387"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100159000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 723703298"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.317371"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100167000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 726651204"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.320671"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100170000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 728404902"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.321519"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100173000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 728448065"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.322049"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "10019100000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 727299138"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.325251"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100193000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 722324869"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.326910"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100199000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 726734590"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.327723"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100201000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 726422534"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.328458"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100209000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 723593001"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.329216"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100213000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 724085559"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.329856"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100224000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 727869154"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.330687"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100238000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 727899659"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.331364"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100258000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 722890441"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.332052"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100268000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 729902071"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.332534"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100269000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 724418084"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.332883"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100270000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 722647562"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.333308"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100290000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 722284002"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.333848"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100302000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 722843740"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.334462"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100309000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 729478454"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.335047"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100314000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 728285484",
+            "+236 727436241"
+          ],
+          "call_count": 2,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.335643"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100320000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 728495187"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.336354"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100337000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 726159172"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.337157"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100351000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 729825074"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.338471"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100355000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 727145971"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.340386"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100378000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 726697818"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.341291"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100390000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 727919359"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.342723"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100414000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 728467726"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.343481"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100415000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 723739207"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.344248"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100433000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 724940319",
+            "+236 721236293"
+          ],
+          "call_count": 2,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.344959"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100436000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 727944595"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.345594"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100447000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 726255956"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.346182"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100475000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 729124053"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.346804"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100498000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 726730290"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.347388"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100505000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 722772258"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.348021"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100508000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 728462856"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.348650"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100525000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 729245659"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.349199"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "10052700000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 723341057"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.349741"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100539000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 728628891"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.350335"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100544000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 725925360"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.350875"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100576000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 725757902"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.351305"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100581000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 721729216"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.351691"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100596000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 726555122"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.352271"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100602000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 729147720"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.352820"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100605000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 724323709"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.353299"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100619000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 721109031"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.353787"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100629000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 723219824"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.354347"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "10064300000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 726369404"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.354808"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100656000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 726714198"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.355251"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100671000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 723651604"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.355743"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100678000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 724147112"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.356227"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "10071700000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 723426109"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.356783"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100726000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 726497568"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.357459"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100732000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 729009447",
+            "+236 726379509"
+          ],
+          "call_count": 2,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.358111"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100736000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 721601296"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.358771"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100745000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 723443176"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.359425"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100755000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 722639417"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.360150"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100769000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 722562657"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.360790"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100777000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 724010529"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.361262"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100782000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 722913049"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.361606"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100785000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 721584005"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.361937"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100789000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 726115785",
+            "+236 725433204"
+          ],
+          "call_count": 2,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.362289"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100826000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 723239922"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.362669"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100832000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 725756043"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.362985"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100834000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 726555772"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.363287"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100839000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 722295227"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.363586"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "10084000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 723136529"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.363933"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100849000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 724015593"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.364233"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "10087000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 721701771"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.364565"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100871000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 722914064"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.364852"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100879000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 729597330"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.365128"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100886000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 721499914"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.365400"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100896000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 721923819"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.365675"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100906000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 721107102"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.365954"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100910000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 725527477"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.366347"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100913000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 727394713"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.366940"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100918000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 722240929"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.367535"
+      },
+      {
+        "type": "IMEI_FRAUD",
+        "imei": "100933000000000.0",
+        "score": 90,
+        "evidence": {
+          "luhn_valid": false,
+          "msisdns_using": [
+            "+236 729535166"
+          ],
+          "call_count": 1,
+          "first_seen": "",
+          "operators_affected": [
+            "Unknown"
+          ]
+        },
+        "verdict": "CLONED/FAKE DEVICE",
+        "action": "Device seizure. Prosecution of importer. Customs duty recovery.",
+        "detected_at": "2026-05-15T14:18:27.368396"
+      }
+    ],
+    "mass_sms": [],
+    "aml": [],
+    "grey_routes": {
+      "type": "GREY_ROUTE",
+      "idd_call_count": 17287,
+      "idd_total_revenue": 20917371.0,
+      "idd_total_duration": 150363.0,
+      "unique_msisdns": 5799,
+      "evidence": "IDD traffic volume detected \u2014 compare against declared interconnect revenue",
+      "action": "Regulatory action. Interconnect fee recovery.",
+      "detected_at": "2026-05-15T14:19:34.254914"
+    },
+    "summary": {
+      "total_anomalies": 100,
+      "high_risk_count": 100,
+      "detected_at": "2026-05-15T14:18:26.248478"
+    }
+  }
+}

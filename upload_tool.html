@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>NOCTYRA360™ — Upload CDR Direct</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #07101C; color: #e2e8f0; font-family: Arial, sans-serif; padding: 30px; }
+  h1 { color: #C9A227; font-size: 22px; margin-bottom: 6px; }
+  h2 { color: #94A3B8; font-size: 13px; font-weight: normal; margin-bottom: 30px; }
+  .card { background: #0D1B2E; border: 1px solid #1A3050; border-radius: 12px; padding: 24px; margin-bottom: 20px; }
+  .card h3 { color: #C9A227; font-size: 14px; margin-bottom: 16px; }
+  label { color: #94A3B8; font-size: 12px; display: block; margin-bottom: 4px; }
+  input, select { width: 100%; background: #07101C; border: 1px solid #1A3050; color: #e2e8f0;
+    padding: 10px; border-radius: 8px; font-size: 13px; margin-bottom: 12px; }
+  .drop { border: 2px dashed #1A3050; border-radius: 10px; padding: 40px; text-align: center;
+    cursor: pointer; transition: border-color .2s; margin-bottom: 12px; }
+  .drop:hover { border-color: #C9A227; }
+  .drop-icon { font-size: 36px; margin-bottom: 10px; }
+  .drop-text { color: #64748B; font-size: 13px; }
+  .btn { background: #C9A227; color: #07101C; border: none; padding: 12px 24px;
+    border-radius: 8px; font-size: 14px; font-weight: 700; cursor: pointer; width: 100%; margin-top: 8px; }
+  .btn:hover { background: #f59e0b; }
+  .btn-sec { background: #162544; color: #60A5FA; }
+  .prog { display: none; }
+  .bar-wrap { background: #1e293b; border-radius: 8px; height: 10px; margin: 12px 0; }
+  .bar { height: 100%; background: linear-gradient(90deg,#C9A227,#f59e0b); border-radius: 8px;
+    width: 0%; transition: width .4s; }
+  .pct { color: #C9A227; font-size: 20px; font-weight: 700; text-align: center; }
+  .step { color: #64748B; font-size: 12px; text-align: center; margin-top: 4px; }
+  .result { display: none; }
+  .kpi { background: #07101C; border-radius: 8px; padding: 16px; margin-bottom: 10px; }
+  .kpi-label { color: #64748B; font-size: 11px; text-transform: uppercase; letter-spacing: .5px; }
+  .kpi-value { color: #C9A227; font-size: 22px; font-weight: 700; margin: 4px 0; }
+  .kpi-red { color: #F87171; }
+  .kpi-green { color: #4ADE80; }
+  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .row3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+  .alert { padding: 12px 14px; border-radius: 6px; margin-bottom: 8px; border-left: 3px solid; }
+  .alert-red { border-color: #F87171; background: rgba(248,113,113,.06); }
+  .alert-yellow { border-color: #FBBF24; background: rgba(251,191,36,.06); }
+  .alert-gold { border-color: #C9A227; background: rgba(201,162,39,.06); }
+  .sha { font-family: monospace; font-size: 9px; color: #86EFAC; word-break: break-all; }
+  .dl-btn { display: block; background: #1E8449; color: #fff; text-decoration: none;
+    padding: 10px; border-radius: 8px; text-align: center; font-weight: 700;
+    font-size: 13px; margin-bottom: 8px; }
+  .dl-btn-blue { background: #162544; color: #60A5FA; }
+  .tag { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 10px;
+    font-weight: 700; margin-left: 6px; }
+  .tag-red { background: #F87171; color: #fff; }
+  .tag-gold { background: #C9A227; color: #07101C; }
+  .log { background: #07101C; border: 1px solid #1A3050; border-radius: 6px; padding: 12px;
+    font-family: monospace; font-size: 11px; color: #64748B; max-height: 120px;
+    overflow-y: auto; margin-top: 10px; }
+  .log-ok { color: #4ADE80; }
+  .log-err { color: #F87171; }
+  .log-info { color: #C9A227; }
+</style>
+</head>
+<body>
+
+<h1>NOCTYRA360™ — Upload CDR Direct</h1>
+<h2>Connect Now USA LLC · Outil de chargement garanti</h2>
+
+<!-- CONFIG -->
+<div class="card">
+  <h3>⚙️ Configuration</h3>
+  <div class="row">
+    <div>
+      <label>URL Backend</label>
+      <input id="api" value="http://localhost:8000">
+    </div>
+    <div>
+      <label>Pays</label>
+      <select id="pays" onchange="updatePays()">
+        <option value="Madagascar|MGA|Telma|Orange Madagascar|Airtel Madagascar">🇲🇬 Madagascar — Telma · Orange · Airtel</option>
+        <option value="Madagascar|MGA|Orange Madagascar|Telma|Airtel Madagascar">🇲🇬 Madagascar — Orange Madagascar</option>
+        <option value="Madagascar|MGA|Airtel Madagascar|Telma|Orange Madagascar">🇲🇬 Madagascar — Airtel Madagascar</option>
+        <option value="Centrafrique|XAF|Orange CAR|Telecel CAR|Moov Africa CAR">🇨🇫 Centrafrique — Orange CAR</option>
+        <option value="Centrafrique|XAF|Telecel CAR|Orange CAR|Moov Africa CAR">🇨🇫 Centrafrique — Telecel CAR</option>
+        <option value="Centrafrique|XAF|Moov Africa CAR|Orange CAR|Telecel CAR">🇨🇫 Centrafrique — Moov Africa CAR</option>
+        <option value="Mozambique|MZN|Vodacom Mozambique|Movitel|Tmcel">🇲🇿 Mozambique — Vodacom</option>
+        <option value="Mozambique|MZN|Movitel|Vodacom Mozambique|Tmcel">🇲🇿 Mozambique — Movitel</option>
+        <option value="Côte d'Ivoire|XOF|Orange CI|MTN CI|Moov CI">🇨🇮 Côte d'Ivoire — Orange CI</option>
+        <option value="DRC Congo|CDF|Vodacom Congo|Orange RDC|Airtel Congo">🇨🇩 Congo DRC — Vodacom</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div>
+      <label>Opérateur</label>
+      <input id="operator" value="Telma">
+    </div>
+    <div>
+      <label>Devise</label>
+      <input id="sym" value="MGA">
+    </div>
+  </div>
+  <div class="row">
+    <div>
+      <label>Période</label>
+      <input id="period" value="Avril 2026">
+    </div>
+    <div>
+      <label>Type de fichier</label>
+      <select id="isMomo">
+        <option value="false">📡 CDR Télécom</option>
+        <option value="true">💳 Mobile Money</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<!-- UPLOAD -->
+<div class="card">
+  <h3>📁 Fichier CDR</h3>
+  <div class="drop" id="dropzone" onclick="document.getElementById('fi').click()"
+       ondragover="event.preventDefault();this.style.borderColor='#C9A227'"
+       ondragleave="this.style.borderColor=''"
+       ondrop="event.preventDefault();this.style.borderColor='';handleFile(event.dataTransfer.files[0])">
+    <div class="drop-icon">📁</div>
+    <div class="drop-text" id="droptext">Cliquer ou glisser le fichier CSV ici</div>
+  </div>
+  <input type="file" id="fi" accept=".csv,.txt,.log" style="display:none"
+         onchange="handleFile(this.files[0])">
+  <button class="btn btn-sec" onclick="testBackend()">🔍 Tester le backend d'abord</button>
+
+  <!-- PROGRESSION -->
+  <div class="prog" id="prog">
+    <div class="bar-wrap"><div class="bar" id="bar"></div></div>
+    <div class="pct" id="pct">0%</div>
+    <div class="step" id="step">Initialisation...</div>
+    <div class="log" id="log"></div>
+  </div>
+</div>
+
+<!-- RÉSULTATS -->
+<div class="card result" id="resultCard">
+  <h3>✅ Résultats NOCTYRA360™</h3>
+  <div class="row3" id="kpis"></div>
+  <div id="alerts" style="margin-top:16px"></div>
+  <div style="margin-top:16px">
+    <div class="kpi-label" style="margin-bottom:8px">SHA-256 · CERTIFIÉ</div>
+    <div class="sha" id="sha256">—</div>
+  </div>
+  <div id="downloads" style="margin-top:16px"></div>
+  <button class="btn" style="margin-top:16px"
+          onclick="copyToMain()">⚡ Injecter dans NOCTYRA360™ principal</button>
+</div>
+
+<script>
+var API = 'http://localhost:8000';
+var lastResult = null;
+
+function updatePays(){
+  var v = document.getElementById('pays').value.split('|');
+  document.getElementById('operator').value = v[2] || '';
+  document.getElementById('sym').value       = v[1] || '';
+  /* Mettre à jour le type MoMo si nom contient momo/money */
+  var isMomoField = document.getElementById('isMomo');
+  if(isMomoField && v[2]){
+    var isMomo = /money|momo|mvola|mpesa|wave|orange.*money|airtel.*money/i.test(v[2]);
+    isMomoField.value = isMomo ? 'true' : 'false';
+  }
+}
+
+function log(msg, type){
+  var l = document.getElementById('log');
+  var cls = type==='ok'?'log-ok':type==='err'?'log-err':'log-info';
+  l.innerHTML += '<div class="'+cls+'">['+new Date().toLocaleTimeString()+'] '+msg+'</div>';
+  l.scrollTop = l.scrollHeight;
+}
+
+function sp(p, msg){
+  document.getElementById('bar').style.width = p+'%';
+  document.getElementById('pct').textContent = p+'%';
+  if(msg) document.getElementById('step').textContent = msg;
+}
+
+function testBackend(){
+  var api = document.getElementById('api').value;
+  document.getElementById('prog').style.display='block';
+  document.getElementById('log').innerHTML='';
+  sp(10,'Test backend...');
+  log('Test sur '+api);
+  fetch(api+'/api/health')
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      log('✅ Backend opérationnel: '+JSON.stringify(d), 'ok');
+      sp(100,'Backend OK');
+      API = api;
+    })
+    .catch(function(e){
+      log('❌ Erreur: '+e.message, 'err');
+      log('Essai 127.0.0.1...');
+      fetch('http://127.0.0.1:8000/api/health')
+        .then(function(r){return r.json();})
+        .then(function(d){
+          log('✅ Backend sur 127.0.0.1: '+JSON.stringify(d),'ok');
+          API='http://127.0.0.1:8000';
+          document.getElementById('api').value=API;
+          sp(100,'Backend OK sur '+API);
+        })
+        .catch(function(e2){
+          log('❌ 127.0.0.1 aussi KO: '+e2.message,'err');
+          log('⚠️ Vérifier que bash run.sh tourne dans Ubuntu','err');
+          sp(0,'Backend inaccessible');
+        });
+    });
+}
+
+function handleFile(file){
+  if(!file) return;
+  API = document.getElementById('api').value;
+  document.getElementById('droptext').textContent = '📄 '+file.name+' ('+Math.round(file.size/1024)+' KB)';
+  document.getElementById('prog').style.display='block';
+  document.getElementById('log').innerHTML='';
+  document.getElementById('resultCard').style.display='none';
+  sp(5,'Lecture du fichier...');
+  log('Fichier: '+file.name+' ('+Math.round(file.size/1024)+' KB)');
+
+  var reader = new FileReader();
+  reader.onload = function(e){
+    var buf = e.target.result;
+    log('✅ Fichier lu: '+buf.byteLength+' bytes','ok');
+    sp(10,'Envoi au backend...');
+    doUpload(buf, file.name);
+  };
+  reader.onerror = function(){ log('❌ Erreur lecture fichier','err'); };
+  reader.readAsArrayBuffer(file);
+}
+
+function doUpload(buf, fname){
+  var op     = document.getElementById('operator').value;
+  var sym    = document.getElementById('sym').value;
+  var period = document.getElementById('period').value;
+  var isMomo = document.getElementById('isMomo').value;
+  var pays   = document.getElementById('pays').value.split('|')[0];
+
+  var blob = new Blob([buf], {type:'text/csv'});
+  var fd   = new FormData();
+  fd.append('file',        blob, fname);
+  fd.append('operator',    op);
+  fd.append('country',     pays);
+  fd.append('period',      period);
+  fd.append('declaration', '{}');
+  fd.append('is_momo',     isMomo);
+
+  log('→ POST '+API+'/api/process');
+  log('  Opérateur: '+op+' | Pays: '+pays+' | Devise: '+sym);
+
+  var eps = [API,'http://localhost:8000','http://127.0.0.1:8000'];
+  var ti  = 0;
+
+  function tryEp(){
+    if(ti >= eps.length){
+      log('❌ Aucun backend disponible','err');
+      sp(0,'Échec — vérifier bash run.sh');
+      return;
+    }
+    var ep = eps[ti++];
+    log('→ Essai: '+ep);
+    var b2 = new Blob([buf],{type:'text/csv'});
+    var f2 = new FormData();
+    f2.append('file',b2,fname);
+    f2.append('operator',op);
+    f2.append('country',pays);
+    f2.append('period',period);
+    f2.append('declaration','{}');
+    f2.append('is_momo',isMomo);
+
+    fetch(ep+'/api/process',{method:'POST',body:f2})
+      .then(function(r){
+        if(!r.ok) throw new Error('HTTP '+r.status);
+        return r.json();
+      })
+      .then(function(resp){
+        API = ep;
+        log('✅ Job lancé: '+resp.job_id,'ok');
+        sp(15,'Job '+resp.job_id+'...');
+        pollJob(resp.job_id, sym, op);
+      })
+      .catch(function(e){
+        log('⚠️ '+ep+' → '+e.message);
+        tryEp();
+      });
+  }
+  tryEp();
+}
+
+function pollJob(jid, sym, op){
+  setTimeout(function(){
+    fetch(API+'/api/job/'+jid)
+      .then(function(r){return r.json();})
+      .then(function(j){
+        sp(j.progress||0, j.status+' · '+(j.total_rows||0).toLocaleString('fr-FR')+' lignes');
+        if(j.progress > 0) log('  Progress: '+j.progress+'% | '+j.total_rows+' lignes');
+        if(j.status==='complete'){
+          sp(100,'Récupération résultats...');
+          log('✅ Traitement terminé!','ok');
+          fetch(API+'/api/result/'+jid)
+            .then(function(r){return r.json();})
+            .then(function(res){
+              showResults(res, sym, op);
+            });
+        } else if(j.status==='error'){
+          log('❌ Erreur backend: '+(j.error||'?'),'err');
+          sp(0,'Erreur');
+        } else {
+          pollJob(jid, sym, op);
+        }
+      })
+      .catch(function(){ pollJob(jid, sym, op); });
+  }, 2000);
+}
+
+function fmt(n, sym){
+  if(!n && n!==0) return '—';
+  return sym+' '+Math.round(n).toLocaleString('fr-FR');
+}
+
+function showResults(res, sym, opName){
+  lastResult = res;
+  var f   = res.finding   || {};
+  var g   = f.gap         || {};
+  var an  = res.anomalies || {};
+  var rpt = res.reports   || {};
+  var cert= f.certified   || {};
+
+  var totalRev = f.total_revenue    || 0;
+  var taxDue   = f.tax_due          || 0;
+  var taxDecl  = f.declared_revenue || 0;
+  var efrGap   = g.tax_gap_local    || g.tax_gap || (taxDue-taxDecl) || 0;
+  var totRecs  = f.total_records    || 0;
+  var sha      = f.sha256           || '—';
+  var comp     = taxDue>0 ? Math.round(taxDecl/taxDue*100) : 0;
+  var anomSum  = (an.summary||{}).total_anomalies ||
+                 (an.sim_box||[]).length+(an.imei_fraud||[]).length+(an.aml||[]).length;
+  var realOp   = f.operator || opName;
+
+  log('✅ Revenue: '+fmt(totalRev,sym),'ok');
+  log('✅ EFR Gap: '+fmt(efrGap,sym),'ok');
+  log('✅ Opérateur: '+realOp,'ok');
+  log('✅ Anomalies: '+anomSum,'ok');
+
+  // KPIs
+  var kpis = document.getElementById('kpis');
+  kpis.innerHTML =
+    kpi('Total Revenue',fmt(totalRev,sym),'','') +
+    kpi('Tax Due',fmt(taxDue,sym),'','') +
+    kpi('EFR Gap',fmt(efrGap,sym),'kpi-red','') +
+    kpi('Tax Déclaré',fmt(taxDecl,sym),'','') +
+    kpi('CDR Traités',totRecs.toLocaleString('fr-FR'),'','') +
+    kpi('Compliance',comp+'%',comp<80?'kpi-red':'kpi-green','') +
+    kpi('Anomalies',anomSum.toLocaleString(),'kpi-red','') +
+    kpi('Opérateur',realOp,'','') +
+    kpi('Pays',f.country||'—','','');
+
+  // SHA-256
+  document.getElementById('sha256').textContent = sha;
+
+  // Alertes
+  var sb  = an.sim_box    || [];
+  var im  = an.imei_fraud || [];
+  var aml = an.aml        || [];
+  var al  = '';
+  if(sb.length){
+    var mx=Math.max.apply(null,sb.map(function(x){return x.score||0;}));
+    al+='<div class="alert alert-red">'+
+      '<b style="color:#F87171">🚨 SIM Box — '+sb.length.toLocaleString()+' suspects</b>'+
+      '<span class="tag tag-red">CRITIQUE</span>'+
+      '<div style="color:#94A3B8;font-size:11px;margin-top:4px">Score max: '+mx+'/100</div></div>';
+  }
+  if(im.length){
+    al+='<div class="alert" style="border-color:#F97316;background:rgba(249,115,22,.06)">'+
+      '<b style="color:#F97316">📱 IMEI — '+im.length.toLocaleString()+' invalides</b>'+
+      '<div style="color:#94A3B8;font-size:11px;margin-top:4px">Gap douanes estimé</div></div>';
+  }
+  if(aml.length){
+    al+='<div class="alert alert-yellow">'+
+      '<b style="color:#FBBF24">💳 AML — '+aml.length.toLocaleString()+' transactions</b>'+
+      '<div style="color:#94A3B8;font-size:11px;margin-top:4px">SAR requis</div></div>';
+  }
+  al+='<div class="alert alert-gold">'+
+    '<b style="color:#C9A227">🔐 EFR GAP CERTIFIÉ — '+fmt(efrGap,sym)+'</b>'+
+    '<span class="tag tag-gold">SHA-256</span>'+
+    '<div style="color:#94A3B8;font-size:11px;margin-top:4px">Admissible DGI · ARTEC · Tribunal</div></div>';
+  document.getElementById('alerts').innerHTML = al;
+
+  // Downloads
+  var dl = '';
+  var pdfF = rpt.pdf   ? rpt.pdf.split('/').pop()   : '';
+  var xlsF = rpt.excel ? rpt.excel.split('/').pop() : '';
+  if(pdfF) dl+='<a class="dl-btn" href="'+API+'/api/report/'+pdfF+'" target="_blank">📋 Télécharger Rapport PDF — '+realOp+'</a>';
+  if(xlsF) dl+='<a class="dl-btn dl-btn-blue" href="'+API+'/api/report/'+xlsF+'" target="_blank">📊 Télécharger Rapport Excel</a>';
+  document.getElementById('downloads').innerHTML = dl;
+
+  document.getElementById('resultCard').style.display='block';
+  document.getElementById('resultCard').scrollIntoView({behavior:'smooth'});
+}
+
+function kpi(label, value, cls, tag){
+  return '<div class="kpi">'+
+    '<div class="kpi-label">'+label+'</div>'+
+    '<div class="kpi-value '+cls+'">'+value+'</div>'+
+    '</div>';
+}
+
+function copyToMain(){
+  if(!lastResult) return;
+  /* Injecter dans la fenêtre NOCTYRA360™ principale */
+  var wins = [];
+  try{
+    if(window.opener && window.opener.N360_LAST_RESULT !== undefined){
+      window.opener.N360_LAST_RESULT = lastResult;
+      /* Déclencher l'injection */
+      var f=lastResult.finding||{};
+      var g=f.gap||{};
+      var sym=(window.opener.S&&window.opener.S.cfg&&window.opener.S.cfg.sym)||'MGA';
+      function set(id,v){
+        var e=window.opener.document.getElementById(id);
+        if(e) e.textContent=v;
+      }
+      function fmt(n){return sym+' '+Math.round(n||0).toLocaleString('fr-FR');}
+      set('dk-gross',fmt(f.total_revenue));
+      set('dk-taxdue',fmt(f.tax_due));
+      set('dk-efr',fmt(g.tax_gap_local||g.tax_gap));
+      set('dk-declared',fmt(f.declared_revenue));
+      set('dk-cdr',(f.total_records||0).toLocaleString('fr-FR'));
+      alert('✅ Résultats injectés dans NOCTYRA360™!');
+    } else {
+      /* Copier dans presse-papier pour console */
+      var code='window.N360_LAST_RESULT='+JSON.stringify(lastResult).substring(0,200)+'...';
+      alert('Ouvrir Console F12 dans NOCTYRA360™ et taper:\nwindow.location.href="'+window.location.href+'"');
+    }
+  } catch(e){ alert('Injecter manuellement via Console F12'); }
+}
+</script>
+</body>
+</html>
