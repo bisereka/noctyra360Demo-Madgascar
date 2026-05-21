@@ -3,6 +3,8 @@ NOCTYRA360™ — Production REST API v13
 Serves V13 integrated frontend + handles all CDR processing server-side.
 """
 import os, json, hashlib, shutil, sys
+from fastapi import FastAPI
+app = FastAPI()
 from datetime import datetime
 from pathlib import Path
 from typing import Optional
