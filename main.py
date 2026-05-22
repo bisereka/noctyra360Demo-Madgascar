@@ -1,4 +1,3 @@
-from fastapi import FastAPI
-app = FastAPI()
-@app.get("/")
-def root():
+#from fastapi import FastAPI
+#app = FastAPI()
+#@app.get("/")
